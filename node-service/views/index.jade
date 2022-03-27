@@ -19,14 +19,14 @@ block content
       span.label Room
       br
       select(name='room', placeholder='kitchen', required='required')
-        - rooms = [ 'kitchen', 'kitchen pantry', 'great room', 'dining room', 'foyer', '1st floor bathroom', 'garage', 'basement', 'basement closet', 'bonus room', 'main suite bedroom', 'craft room', 'main suite bathroom', 'second floor bathroom', 'avery bedroom', 'tyler bedroom', 'guest bedroom']
+        - rooms = [ 'kitchen', 'kitchen pantry', 'great room', 'dining room', 'pictures/art', 'foyer', '1st floor bathroom', 'garage', 'basement', 'basement closet', 'bonus room', 'main suite bedroom', 'craft room', 'main suite bathroom', 'second floor bathroom', 'avery bedroom', 'tyler bedroom', 'guest bedroom']
         each item in rooms
           option(selected='kitchen' == item) #{item}
     div.input
       span.label Destination
       br
       select(name='destination', placeholder='day', required='required')
-        - destinations = [ 'move it', 'ship it', 'get rid of it']
+        - destinations = [ 'move it', 'store it', 'get rid of it']
         each item in destinations
           option(selected='day' == item) #{item}  
     div.actions
