@@ -15,9 +15,14 @@ block content
     div.input
       span.label Item
       input(type='text', name='item', placeholder='Halloween pumpkins', required='required')
+    div.input
+      span.label Room
+      select(name='room', placeholder='Halloween pumpkins', required='required')
+          - | rooms = [ 'kitchen', 'kitchen pantry', 'great room']
+          each room in rooms
+          option(selected='kitchen' == room) #{room} 
     div.actions
       input(type='submit', value='Create')
-
   br
   br
   h2= 'View item'
